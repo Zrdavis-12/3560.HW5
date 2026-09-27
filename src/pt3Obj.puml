@@ -1,0 +1,24 @@
+@startuml
+
+object "ship1 : Ship" as S1 {
+ShipName = "Titanic"
+yearBuilt = "March31st,1909"
+}
+
+object "ship2 : Ship" as S2 {
+ShipName = "Titanic"
+yearBuilt = "March31st,1909"
+}
+
+object "ship3 : Ship" as S3 {
+ShipName = "MVGemini"
+yearBuilt = "May30th,1991"
+maxNumberPassengers = 100
+}
+
+}
+
+
+
+
+@enduml

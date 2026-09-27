@@ -1,0 +1,39 @@
+@startuml
+
+class File {
+
+- name : String
+
++ File (name : String)
++ getName () : String
++ setName (name : String) : void
++ toString() : String
+}
+
+class Folder {
+
+- name : String
+- subfolders : ArrayList<Folder>
+- files : ArrayList<File>
+
++ Folder()
++ getName () : String
++ setName (name : String) : void
++ removeSubfolder (subFolderName : String) : void
++ addSubFolder (subFolderName : String) : void
++ getSubFolder (subFolderName : String) : Folder
++ removeFile (file : File) : boolean
++ addFile (fileName : String) : void
++ toString() : String
++ printFolderContent() : void
+
+}
+
+
+class Driver {
++ main ( args : String [] ) : void
+}
+
+Folder *-- File
+
+@enduml
